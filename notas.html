@@ -1,0 +1,25 @@
+los mediaquerys estan en main.css, parece que hubiera un error 
+cuidado con pnotify
+que significa redirect("/");
+
+1)
+comente en el custom.css...no es
+@media screen 
+and (min-width : 200px)
+and (max-width: 300px){
+    body{
+        min-width: 300px;
+    }
+    .containerModulo{
+        min-width: 300px;
+    }
+}
+
+2)
+comente esto
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body { 
+/*        width: 495px; */
+    }
+}

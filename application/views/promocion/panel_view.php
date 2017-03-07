@@ -1,0 +1,72 @@
+<script type="text/javascript" src="<?php echo URL_JS; ?>promocion/jsPromocionPanel.js" charset=UTF-8"></script>
+<div class="col-lg-12">
+    <div class="page-header">
+        <h4>Gestión de <?php echo $modulo;?></h4>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <ul id="myTab" class="nav nav-tabs pattern">
+            <li class="active"><a href="#home" data-toggle="tab">Nuevo <?php echo $modulo;?></a></li>
+            <li><a href="#profile" data-toggle="tab" id="tabqry">Buscar <?php echo $modulo;?></a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="home">
+                <?php $this->load->view("promocion/ins_view"); ?>
+            </div>
+            <div class="tab-pane fade" id="profile">
+            </div>
+        </div>
+        <!-- popup 1 addcaracteristica-->
+        <div  class="modal fade" id="modalAddPromDetalle"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header headAddProm">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="lbldetalle">Agregar Detalle Promoción</h3>
+                    </div>
+                    <div class="modal-body bodyAddProm">
+                    </div>
+                    <div class="modal-footer footAddProm">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-modales="<?php echo $modulo;?>">
+            <div  class="modal fade" id="modalCambia<?php echo $modulo;?>"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header headUpd">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="lbldetalle">Actualizar <?php echo $modulo;?></h3>
+                        </div>
+                        <div class="modal-body bodyUpd">
+                        </div>
+                        <div class="modal-footer footUpd">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup 2-->
+            <div class="modal fade" id="modalBorra<?php echo $modulo;?>"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header headDel">
+                            <input type="hidden" id="hdn_idPromocionDel" />
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="lbldetalle">Eliminar <?php echo $modulo;?></h3>
+                        </div>
+                        <div class="modal-body bodyDel">    
+                            ¿Desea eliminar el registro seleccionado?
+                        </div>
+                        <div class="modal-footer footDel">
+                            <button type="button" id="btnEliminar" class="btn btn-primary">SI</button>
+                            <button id="btnCancelar" class="btn" data-dismiss="modal" aria-hidden="true">NO</button>
+                            <div id="msgDel"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php ?>

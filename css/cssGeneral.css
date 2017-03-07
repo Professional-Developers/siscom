@@ -1,0 +1,47 @@
+.todoMayuscula{  
+text-transform: uppercase;  
+}
+.imagenParaTabla{
+    width: 30px;
+    height: 30px;
+}
+input {
+    text-transform: uppercase;  
+}
+.estiloBoxUsuario{
+    height: 100% !important;
+}
+.bigBtnIcon li a:after{
+    border: none !important;
+}
+
+/*#header{
+	/*background: #344B54;/*RVA va de a 255 FF=255 es el numero mas alto
+	/*0 es el menor F es el mayor, 7 es el intermedio
+	/*color: white;
+	overflow: hidden;
+	/*padding: 0.5em;
+	position: relative; /*para que trabaje con absolute
+}*/
+#header #logo{
+	/*float: left;*/
+}
+#header #logo{
+	transition:.5s;
+	width: 55px;/*el alto se calcula automaticamente y proporcionalmente*/
+        /*float: left;*/
+    padding-right: 5px;
+    margin-right: 12px;
+    margin-top: 3px;
+}
+#header #logo:hover{
+	/*-webkit-transform: rotate(360deg);*/
+	transform: rotate(360deg);
+}
+.cursiva{
+    font-style: italic;
+}
+.navbar .navbar-brand .slogan
+.estilologo{
+    font-size: 22px !important;
+}
